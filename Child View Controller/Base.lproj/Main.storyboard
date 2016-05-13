@@ -1,25 +1,185 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Child_View_Controller" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-35" y="292"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="KNc-ix-6rM">
+            <objects>
+                <pageViewController storyboardIdentifier="MyPageVC" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="none" id="Vwb-lW-olj" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QZy-iF-HXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="319" y="292"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jV1-Yy-zz9">
+            <objects>
+                <viewController storyboardIdentifier="PageOneVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Dbr-fM-RlF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eET-OW-AQs"/>
+                        <viewControllerLayoutGuide type="bottom" id="egX-N8-iE4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O63-Eh-3Cy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TheBuffalos16.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8Jb-f7-ml5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3p-o9-du6">
+                                <rect key="frame" x="5" y="15" width="114" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="kVr-Ob-0aU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8Jb-f7-ml5" secondAttribute="trailing" id="4TK-zP-YJD"/>
+                            <constraint firstItem="F3p-o9-du6" firstAttribute="leading" secondItem="O63-Eh-3Cy" secondAttribute="leadingMargin" constant="-11" id="8uv-W0-soS"/>
+                            <constraint firstItem="8Jb-f7-ml5" firstAttribute="top" secondItem="O63-Eh-3Cy" secondAttribute="top" id="LzH-dQ-aFu"/>
+                            <constraint firstItem="F3p-o9-du6" firstAttribute="top" secondItem="O63-Eh-3Cy" secondAttribute="topMargin" constant="15" id="Pvd-QC-Sss"/>
+                            <constraint firstItem="8Jb-f7-ml5" firstAttribute="leading" secondItem="O63-Eh-3Cy" secondAttribute="leading" id="SmY-Jx-jCe"/>
+                            <constraint firstItem="egX-N8-iE4" firstAttribute="top" secondItem="F3p-o9-du6" secondAttribute="bottom" constant="428" id="W3z-by-dhW"/>
+                            <constraint firstItem="egX-N8-iE4" firstAttribute="top" secondItem="8Jb-f7-ml5" secondAttribute="bottom" id="zBF-Po-mQQ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YM9-qQ-Xrk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="658" y="292"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JWi-Nb-PCQ">
+            <objects>
+                <viewController storyboardIdentifier="PageTwoVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1iz-qV-iJ5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0mY-YW-jXE"/>
+                        <viewControllerLayoutGuide type="bottom" id="nUc-5l-hk6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IuV-vX-diQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URd-8H-Oqf">
+                                <rect key="frame" x="0.0" y="9" width="114" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="XV8-6q-G6W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TheCowboys16.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KDv-gl-AQK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="URd-8H-Oqf" firstAttribute="leading" secondItem="KDv-gl-AQK" secondAttribute="leading" id="Exa-eo-A4I"/>
+                            <constraint firstItem="KDv-gl-AQK" firstAttribute="top" secondItem="IuV-vX-diQ" secondAttribute="top" id="Z8s-z9-uZp"/>
+                            <constraint firstItem="nUc-5l-hk6" firstAttribute="top" secondItem="KDv-gl-AQK" secondAttribute="bottom" id="byC-Cc-1ho"/>
+                            <constraint firstAttribute="trailing" secondItem="KDv-gl-AQK" secondAttribute="trailing" id="f9x-AD-Pje"/>
+                            <constraint firstItem="KDv-gl-AQK" firstAttribute="leading" secondItem="IuV-vX-diQ" secondAttribute="leading" id="ihI-WT-jcM"/>
+                            <constraint firstItem="URd-8H-Oqf" firstAttribute="top" secondItem="IuV-vX-diQ" secondAttribute="topMargin" constant="9" id="sQh-MV-ave"/>
+                            <constraint firstItem="nUc-5l-hk6" firstAttribute="top" secondItem="URd-8H-Oqf" secondAttribute="bottom" constant="434" id="v3d-Vc-A1t"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hDf-Tz-GrI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1009" y="292"/>
+        </scene>
+        <!--Last Page View Controller-->
+        <scene sceneID="feX-Gi-ska">
+            <objects>
+                <viewController storyboardIdentifier="PageThreeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gud-LG-zYR" customClass="LastPageViewController" customModule="Child_View_Controller" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oui-fD-A92"/>
+                        <viewControllerLayoutGuide type="bottom" id="XcS-lD-ZgM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2sd-aS-p84">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TheMarshals16.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Mf1-GD-6Gr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSA-MR-gWa">
+                                <rect key="frame" x="5" y="15" width="114" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="4RZ-ny-4RM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOZ-Gf-INK">
+                                <rect key="frame" x="238" y="430" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="y4Y-CV-6K3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneButtonTapped:" destination="gud-LG-zYR" eventType="touchUpInside" id="ic8-v8-Xki"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="MOZ-Gf-INK" secondAttribute="trailing" constant="20" id="5VX-dH-7h7"/>
+                            <constraint firstItem="Mf1-GD-6Gr" firstAttribute="leading" secondItem="2sd-aS-p84" secondAttribute="leading" id="9Kj-JV-UYR"/>
+                            <constraint firstAttribute="bottom" secondItem="MOZ-Gf-INK" secondAttribute="bottom" constant="20" symbolic="YES" id="Qgj-a4-wEa"/>
+                            <constraint firstItem="XcS-lD-ZgM" firstAttribute="top" secondItem="vSA-MR-gWa" secondAttribute="bottom" constant="428" id="RhH-Qm-Cfe"/>
+                            <constraint firstItem="Mf1-GD-6Gr" firstAttribute="top" secondItem="2sd-aS-p84" secondAttribute="top" id="SZs-9n-R7Y"/>
+                            <constraint firstItem="vSA-MR-gWa" firstAttribute="leading" secondItem="2sd-aS-p84" secondAttribute="leadingMargin" constant="-11" id="TR7-Do-dz2"/>
+                            <constraint firstItem="vSA-MR-gWa" firstAttribute="top" secondItem="2sd-aS-p84" secondAttribute="topMargin" constant="15" id="VQ4-qm-IEl"/>
+                            <constraint firstAttribute="trailing" secondItem="Mf1-GD-6Gr" secondAttribute="trailing" id="ZIy-Li-HVb"/>
+                            <constraint firstItem="XcS-lD-ZgM" firstAttribute="top" secondItem="Mf1-GD-6Gr" secondAttribute="bottom" id="rml-Mk-9on"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jkn-UO-E5z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1359" y="292"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TheBuffalos16.jpg" width="208" height="283"/>
+        <image name="TheCowboys16.jpg" width="283" height="386"/>
+        <image name="TheMarshals16.jpg" width="283" height="387"/>
+    </resources>
 </document>

@@ -12,6 +12,10 @@
 		C80BA4A81CAB25C600106C09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C80BA4A61CAB25C600106C09 /* Main.storyboard */; };
 		C80BA4AA1CAB25C600106C09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C80BA4A91CAB25C600106C09 /* Assets.xcassets */; };
 		C80BA4AD1CAB25C600106C09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C80BA4AB1CAB25C600106C09 /* LaunchScreen.storyboard */; };
+		C80BA4B71CAB278000106C09 /* TheBuffalos16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C80BA4B41CAB278000106C09 /* TheBuffalos16.jpg */; };
+		C80BA4B81CAB278000106C09 /* TheCowboys16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C80BA4B51CAB278000106C09 /* TheCowboys16.jpg */; };
+		C80BA4B91CAB278000106C09 /* TheMarshals16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C80BA4B61CAB278000106C09 /* TheMarshals16.jpg */; };
+		C80BA4BC1CAB3E6A00106C09 /* LastPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80BA4BB1CAB3E6A00106C09 /* LastPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		C80BA4A91CAB25C600106C09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C80BA4AC1CAB25C600106C09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C80BA4AE1CAB25C600106C09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C80BA4B41CAB278000106C09 /* TheBuffalos16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TheBuffalos16.jpg; sourceTree = "<group>"; };
+		C80BA4B51CAB278000106C09 /* TheCowboys16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TheCowboys16.jpg; sourceTree = "<group>"; };
+		C80BA4B61CAB278000106C09 /* TheMarshals16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TheMarshals16.jpg; sourceTree = "<group>"; };
+		C80BA4BB1CAB3E6A00106C09 /* LastPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,7 @@
 			children = (
 				C80BA4A11CAB25C500106C09 /* Child View Controller */,
 				C80BA4A01CAB25C500106C09 /* Products */,
+				C80BA4BA1CAB279500106C09 /* images */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +66,22 @@
 				C80BA4A21CAB25C500106C09 /* AppDelegate.swift */,
 				C80BA4A41CAB25C500106C09 /* ViewController.swift */,
 				C80BA4A61CAB25C600106C09 /* Main.storyboard */,
+				C80BA4BB1CAB3E6A00106C09 /* LastPageViewController.swift */,
 				C80BA4A91CAB25C600106C09 /* Assets.xcassets */,
 				C80BA4AB1CAB25C600106C09 /* LaunchScreen.storyboard */,
 				C80BA4AE1CAB25C600106C09 /* Info.plist */,
 			);
 			path = "Child View Controller";
+			sourceTree = "<group>";
+		};
+		C80BA4BA1CAB279500106C09 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C80BA4B61CAB278000106C09 /* TheMarshals16.jpg */,
+				C80BA4B51CAB278000106C09 /* TheCowboys16.jpg */,
+				C80BA4B41CAB278000106C09 /* TheBuffalos16.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +143,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C80BA4AD1CAB25C600106C09 /* LaunchScreen.storyboard in Resources */,
+				C80BA4B91CAB278000106C09 /* TheMarshals16.jpg in Resources */,
 				C80BA4AA1CAB25C600106C09 /* Assets.xcassets in Resources */,
+				C80BA4B71CAB278000106C09 /* TheBuffalos16.jpg in Resources */,
+				C80BA4B81CAB278000106C09 /* TheCowboys16.jpg in Resources */,
 				C80BA4A81CAB25C600106C09 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +160,7 @@
 			files = (
 				C80BA4A51CAB25C500106C09 /* ViewController.swift in Sources */,
 				C80BA4A31CAB25C500106C09 /* AppDelegate.swift in Sources */,
+				C80BA4BC1CAB3E6A00106C09 /* LastPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
